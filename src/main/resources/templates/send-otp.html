@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your verification code</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, Helvetica, sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:24px 0;">
+    <tr>
+        <td align="center">
+            <table role="presentation" width="480" cellpadding="0" cellspacing="0" style="max-width:480px; width:100%; background-color:#ffffff; border-radius:8px; overflow:hidden;">
+                <tr>
+                    <td style="background-color:#2563eb; padding:20px; text-align:center; color:#ffffff; font-size:20px; font-weight:bold;">
+                        Verify Your Account
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:32px 28px; color:#333333; font-size:15px; line-height:1.6;">
+                        <p style="margin:0 0 16px;">Hello,</p>
+                        <p style="margin:0 0 24px;">Use the one-time password (OTP) below to complete your verification:</p>
+
+                        <div style="text-align:center; margin:0 0 24px;">
+                <span style="display:inline-block; background-color:#eff6ff; border:1px dashed #2563eb; border-radius:8px; padding:14px 28px; font-size:32px; font-weight:bold; letter-spacing:8px; color:#1d4ed8;">
+                    <th:block th:text="${otp}"></th:block>
+                </span>
+                        </div>
+
+                        <!--                        <p style="margin:0 0 8px;">This code expires in <strong>{{EXPIRY}} minutes</strong>.</p>-->
+                        <p style="margin:0; color:#777777; font-size:13px;">
+                            If you didn't request this code, you can safely ignore this email. Never share your OTP with anyone.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:#f9fafb; padding:16px; text-align:center; color:#999999; font-size:12px;">
+                        &copy; 2026 Your Company. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
